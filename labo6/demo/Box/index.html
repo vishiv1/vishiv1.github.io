@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box</title>
+
+  <style>
+    body {
+      background-color: antiquewhite;
+      margin: 0px; /* TOP, R, B, L  */
+      font-size: 2em;
+      border: 2px solid red;
+      width: 90%;
+      margin-left: auto; /* door auto: element wordt gecentreerd in het midden */
+      margin-right: auto;
+      /* border, padding, margin -> nooit megegeven aan children*/
+    }
+    h1{
+      background-color: red;
+      width: 50%;
+      border: 5px solid black;
+
+      padding: 20px; /* alle kanten 20px*/
+      padding: 20px 50px 40px 100px; /* top right bottom left*/
+
+      padding: 50px 150px; /* top/bottom en left/right*/ /*deze laatste wint/telt mee*/
+
+      margin-left: auto;
+      margin-right: auto; /* margin top en bottom hebben we nu niet geschreven dus worden de de defaults van w3c overgenomen*/
+    }
+
+    img{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    p{
+      background-color: gray;
+      width: 800px;
+    }
+
+    span{
+      background-color: gray;
+      margin-right: 50px;
+      width: 250px;
+      display: inline-block; /* block kan ook maar de text zal dan op nieuwe regel beginnen*/
+    }
+  </style>
+</head>
+<body>
+<h1>VIVES</h1>
+
+
+<img src="bloem2.jpg" height="250" width="300"/>
+<span>element</span>
+<span>element 2</span>
+<p>dit is een element</p>
+
+
+</body>
+</html>
