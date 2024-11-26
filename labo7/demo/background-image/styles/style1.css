@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+    background-color: #EDF2F4;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    margin: 0px;
+    color: red}
+
+header {
+    height: 500px;
+    background-image: url(../images/vlinder.png);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-size: cover;
+}
+
+

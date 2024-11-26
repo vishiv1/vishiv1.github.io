@@ -1,0 +1,41 @@
+body {
+    font: 1,2em Verdana, Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#imgHeader{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 150%;
+}
+h1 h2{
+    font-size: 130%;
+}
+#elixirs{
+    width: 30%;
+    float: right;
+    border: 1px solid firebrick;
+    padding: 2%;
+    box-sizing: border-box;
+    text-align: center;
+    background: url("");
+    line-height: 1;
+}
+section article{
+    float: left;
+    width: 70%;
+}
+
+#guarantee{
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border: solid 1 white;
+}
+
+
