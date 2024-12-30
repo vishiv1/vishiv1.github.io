@@ -1,0 +1,32 @@
+.row1 {
+
+    .col-md-3 {
+        float: left;
+        width: 33.33%;
+        height: 250px;
+        background-color: lightgray;
+    }
+
+    .col-md-6 {
+        float: left;
+        width: 33.33%;
+        height: 250px;
+        background-color: gray;
+    }
+}
+
+.row2 {
+    .col-md-3 {
+        float: left;
+        width: 15%;
+        height: 250px;
+        background-color: lightgray;
+    }
+
+    .col-md-6 {
+        float: left;
+        width: 70%;
+        height: 250px;
+        background-color: gray;
+    }
+}

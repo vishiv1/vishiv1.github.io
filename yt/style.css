@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to right, red, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    color: white;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 10px;
+    border-left-color:silver;
+}
+p{
+    background-color: gray;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: cyan dotted;
+    font-size: 18px;
+    border-style:groove;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 10px;
+    padding: 5px;
+}
+#p1{
+    color: tomato;
+}
+
+.odd{
+    color: red;
+}
+
+.even{
+    color: blue;
+}

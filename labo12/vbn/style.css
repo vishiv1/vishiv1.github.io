@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 90%;
+    margin: 1rem auto;
+}
+div::before{
+    position: absolute;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    box-shadow: 2px 2px 4px #999;
+}
+
+<!-- define Float -->
+.floaty{
+    margin: 2rem 0;
+    overflow: auto;
+}
+
+.floaty::before{
+    content: 'display: float';
+}
+.floaty main{
+    background-color: bisque;
+    padding: 1rem;
+}
+.floaty section:first-of-type{
+    float:left;
+    width: 50%;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+.floaty section:last-of-type{
+    float:right;
+    width: 50%;
+    background-color: #bada55;
+    padding: 1rem;
+}
+
+/* define grid */
+.gridy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "a a"
+    "b c";
+    margin: 2rem 0;
+}
+.gridy::before{
+    content: 'display: grid';
+}
+.gridy main{
+    grid-area: a;
+    background-color: bisque;
+    padding: 1rem;
+}
+.gridy section:first-of-type{
+    grid-area: b;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+.gridy section:last-of-type{
+    grid-area: c;
+    background-color: #bada55;
+    padding: 1rem;
+}
+
+
+
+.flexy{
+    display: flex;
+    flex-wrap: wrap; /* two rows ok now */
+    justify-content: space-between;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.flexy::before{
+    content: 'display: flex';
+}
+.flexy main{
+    flex-basis: 100%;
+    background-color: bisque;
+    padding: 1rem;
+}
+.flexy section{
+    flex-basis: 50%;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+.flexy section:last-child{
+    background-color: #bada55;
+}

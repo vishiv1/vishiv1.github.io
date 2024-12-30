@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+
+    #left {
+        width: 100%;
+    }
+
+
+    #right {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: mediumpurple;
+        margin: 25px 6%;
+    }
+
+    figure {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+    }
+    img{
+        border: solid 10px black;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background: rgba(0,255,0,.2);
+        margin: 25px 10%;
+    }
+
+    figure{
+        float: left;
+        width:20%;
+        margin-right:5%;
+
+        image-orientation: center;
+    }
+    img{
+        border: solid 10px black;
+    }
+}

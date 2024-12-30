@@ -1,0 +1,51 @@
+
+body{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p{
+    margin: 0;
+}
+header {
+    text-align:center;
+    background-color:lightsteelblue;
+}
+
+#left {
+    background-color:lightblue;
+    min-height: 200px;
+    float: left;
+    width: 75%;
+}
+
+#right {
+    background-color:lightcoral;
+    min-height: 200px;
+    float: left;
+    width: 25%;
+}
+
+footer {
+
+    text-align:center;
+    background-color:lightgreen;
+
+}
+
+@media screen and (max-width: 768px)
+{
+    #left {
+        width: 100%;
+        background-color: yellowgreen;
+    }
+
+    #right{
+        width: 100%;
+    }
+    footer {
+        display: none;
+    }
+}
+
