@@ -15,7 +15,7 @@ div::before{
     box-shadow: 2px 2px 4px #999;
 }
 
-<!-- define Float -->
+/*define Float*/
 .floaty{
     margin: 2rem 0;
     overflow: auto;
@@ -70,7 +70,7 @@ div::before{
 }
 
 
-
+/* define flex */
 .flexy{
     display: flex;
     flex-wrap: wrap; /* two rows ok now */

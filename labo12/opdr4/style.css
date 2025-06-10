@@ -1,8 +1,7 @@
 @font-face {
-    font-family: "Kumbh";
+    font-family:"Kumbh";
     src: url(fonts/kumbh.ttf) format("truetype");
 }
-
 
 
 body {
@@ -15,7 +14,7 @@ body {
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     /* zorg dat section-block in het midden komt */
 
@@ -37,9 +36,8 @@ body {
     flex-direction: column;
 
     /* tip: gebruik flex-direction"  */
-
-
 }
+
 
 .card .profile-picture-wrapper {
     order: -1;
@@ -89,7 +87,7 @@ body {
     text-transform: uppercase;
 }
 
-.card .stats>* {
+.card .stats > * {
     text-align: center;
     display: inline-block;
     text-transform: uppercase;

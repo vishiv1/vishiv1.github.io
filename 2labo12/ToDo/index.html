@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Title</title>
+</head>
+
+<body>
+
+<h1>Kanban To-Do</h1>
+<label for="input"></label>
+<input type="text" id="input" name="Input" placeholder="Titel" required="">
+<input type="text" id="input" name="Input" placeholder="Beschrijving" required="">
+
+<div class="board">
+    <div class="column" id="todo" data-status="todo">
+        <h3>To Do</h3>
+    </div>
+    <div class="column" id="inprogress" data-status="inprogress">
+        <h3>In Progress</h3>
+    </div>
+    <div class="column" id="done" data-status="done">
+        <h3>Done</h3>
+    </div>
+</div>
+
+</body>
+</html>
