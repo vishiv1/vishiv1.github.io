@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Groepschat – examenoplossing</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+    <header>
+        <label for="user-select">Huidige gebruiker:</label>
+        <select id="user-select" aria-label="gebruiker kiezen"></select>
+    </header>
+
+    <main>
+        <div class="toolbar">
+            <button id="clear-all">Wissen</button>
+        </div>
+
+        <!-- Nieuwe berichten komen altijd BOVENAAN -->
+        <div id="messages" aria-live="polite"></div>
+
+        <form id="composer" class="composer" autocomplete="off">
+            <input class="message-input" id="message-input" name="message" placeholder="Typ een bericht…" />
+            <button type="submit" id="send">Verstuur</button>
+        </form>
+    </main>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

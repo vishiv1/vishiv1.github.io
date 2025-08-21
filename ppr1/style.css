@@ -1,0 +1,209 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navigatie*/
+body > header > nav
+{
+   text-align: center;
+}
+
+#nav-box> span > a
+{
+    text-decoration: none;
+    color: white;
+
+}
+
+#nav-box > span > a:hover
+{
+    text-decoration: underline;
+
+}
+
+#nav-box > span
+{
+    padding: 1rem;
+}
+
+#nav-box
+{
+    padding: 1rem;
+}
+nav
+{
+    background-color: #292929;
+    color: white;
+    padding: 1rem;
+}
+
+nav > h1
+{
+    padding: 1rem;
+    margin: 0;
+}
+
+
+/*Main code*/
+main
+{
+
+}
+
+.main-box
+{
+    background-image: url("ppr1/chips_challenge.jpg");
+    background-size: cover;
+    padding: 30px;
+    width: 100%;
+}
+
+.main-info-box
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    padding: 2rem 1rem 2rem 1rem;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+
+}
+
+.main-info-box > h2
+{
+    border-bottom: 2px solid #292929 ;
+    padding-bottom: 0.5rem;
+}
+
+.main-info-box > p > span
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*Monsters box*/
+.monsters-box
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.box-even, .box-oneven
+{
+    text-align: center;
+    margin: 1rem;
+    border: 2px dashed #ccc;
+    padding: 1em;
+}
+
+
+
+.box-oneven
+{
+    background-color: #dfdfdf;
+}
+
+/*Informatie*/
+table
+{
+    /**/
+}
+
+tr
+{
+    text-decoration: underline dashed #aaa;
+
+}
+td
+{
+    padding: 0.2em 1em 0.2em 1em;
+}
+
+td#bronvermelding
+{
+    float: right;
+    font-size: 0.6em;
+}
+
+/*Vind je misschien ook interessant blok*/
+#column-box
+{
+    display: flex;
+}
+
+.column1, .column2
+{
+    width: 50%;
+    padding: 1em;
+}
+.column1 > p , .column2 > p
+{
+    font-style: italic;
+
+}
+
+.column1 > ul > li > img, .column2 > ul > li > img
+{
+    width: 1em;
+}
+
+
+.column1 > ul > p
+{
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.column1 ul li.titel, .column2 ul li.titel
+{
+    font-weight: bold;
+
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+#footer
+{
+    background-color: #a7a5a5;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+
+}
+
+#footer  p  span:hover
+{
+    color: #ce0000;
+}
+
+@media only screen and(max-width:1000px)
+{
+    .main-info-box
+    {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
