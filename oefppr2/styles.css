@@ -1,0 +1,111 @@
+/*
+  :root spreekt het <html>-element aan.
+  We zetten 1 keer een net, systeemvriendelijk lettertype voor de hele pagina.
+*/
+:root {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Basis pagina-opmaak */
+body {
+    margin: 0;
+    background: #f6f7fb; /* zacht grijs/blauw */
+    color: #222;
+}
+
+/* De app-card in het midden met schaduw en afgeronde hoeken */
+.app {
+    max-width: 720px;
+    margin: 32px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.08);
+    overflow: hidden; /* ronding blijft netjes */
+}
+
+/* HEADER met label + select */
+header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #f0f3ff;
+    border-bottom: 1px solid #e6e9fb;
+}
+header label { font-weight: 600; }
+
+select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #cfd5f7;
+    background: white;
+}
+
+main { padding: 16px; }
+
+/* Toolbar (nu alleen 'Wissen') */
+.toolbar { display: flex; gap: 8px; margin-bottom: 12px; }
+.toolbar button,
+.composer button {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #cdd2e7;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Berichtenlijst: kolom met tussenruimte */
+#messages { display: flex; flex-direction: column; gap: 10px; }
+
+/* Elk bericht is een 'kaartje' */
+.message {
+    position: relative;
+    background: #f1e9ff;        /* paars tint voor algemene berichten */
+    border-radius: 10px;
+    padding: 10px 12px 12px;
+}
+
+/* Berichten van de huidige gebruiker krijgen een andere kleur (groen) */
+.message.mine { background: #d9f5d6; }
+
+/* Klein grijs tijdstempeltje bovenaan elk bericht */
+.message .timestamp {
+    display: block;
+    font-size: 12px;
+    opacity: .7;
+    margin-bottom: 2px;
+}
+
+/* Regeltje met afzendernaam + (optioneel) delete-knopje links */
+.message .sender {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+/* Lege knop links bij je eigen berichten om te verwijderen (icoon kan via CSS/achtergrond) */
+.message .sender button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #888;
+    background: white; /* leeg rondje; in de opdracht kan dit bv. een X-icoon krijgen via background-image */
+    cursor: pointer;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+/* Composer onderaan: input + knop naast elkaar */
+.composer { display: flex; gap: 8px; margin-top: 16px; }
+.composer input.message-input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Groepschat – volledige oplossing met uitleg</title>
+
+    <!-- We koppelen onze CSS. De CSS zorgt voor layout en stijlen. -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!--
+  De hele app in een container .app
+  Dit is puur voor layout (mooie card met schaduw).
+-->
+<div class="app">
+
+    <!-- HEADER: hier kies je de huidige gebruiker via een dropdown -->
+    <header>
+        <label for="user-select">Huidige gebruiker:</label>
+        <!--
+          We vullen deze <select> vanuit JS met vaste namen.
+          We bewaren de gekozen gebruiker in sessionStorage (blijft bewaard zolang dit tabblad open is).
+        -->
+        <select id="user-select" aria-label="gebruiker kiezen"></select>
+    </header>
+
+    <main>
+        <!-- Kleine toolbar met 1 knop om alle berichten te wissen -->
+        <div class="toolbar">
+            <!--
+              De 'Wissen' knop: we koppelen in JS een click-handler die vraagt om bevestiging.
+              Bij akkoord legen we de berichten en localStorage.
+            -->
+            <button id="clear-all">Wissen</button>
+        </div>
+
+        <!--
+          De berichtenlijst:
+          - Nieuwe berichten komen BOVENAAN (vereiste uit de opdracht).
+          - We vullen dit vanuit JS door DOM-elementen toe te voegen.
+        -->
+        <div id="messages" aria-live="polite"></div>
+
+        <!--
+          De composer: formulier met inputveld en verzendknop.
+          - We luisteren in JS naar het 'submit' event.
+          - We voorkomen standaard formuliergedrag (page reload).
+          - We lezen de tekst uit de input, maken er een bericht van en plaatsen het bovenaan.
+        -->
+        <form id="composer" class="composer" autocomplete="off">
+            <!--
+              Input heeft class 'message-input' zoals vaak in opdrachten gevraagd.
+              We houden na verzenden de focus terug in dit veld (gebruiksvriendelijk).
+            -->
+            <input class="message-input" id="message-input" name="message" placeholder="Typ een bericht…" />
+            <button type="submit" id="send">Verstuur</button>
+        </form>
+    </main>
+</div>
+
+<!-- We koppelen onze JavaScript. 'defer' = uitvoeren nadat HTML klaar is. -->
+<script src="script.js" defer></script>
+</body>
+</html>
